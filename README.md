@@ -1,2 +1,2 @@
 # chauchau
-Generador de textos para mails de despedidas de empresas
+Precario generador de textos para mails de despedidas de empresas.

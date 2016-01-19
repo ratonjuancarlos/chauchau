@@ -36,6 +36,10 @@ if (Meteor.isClient) {
     }
   });
 
+      Template.frases.onRendered(function() {
+        var clipboard = new Clipboard('.btn-copy-link');
+    });
+
 
 
   Template.frases.events({

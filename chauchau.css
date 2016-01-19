@@ -4,3 +4,10 @@
 	text-align: center;
 	    display: block;
 }
+
+::selection {
+  background: #546e7a; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #546e7a; /* Gecko Browsers */
+}

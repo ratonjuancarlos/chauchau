@@ -6,8 +6,14 @@
 }
 
 ::selection {
-  background: #546e7a; /* WebKit/Blink Browsers */
+  background: none;  
 }
 ::-moz-selection {
-  background: #546e7a; /* Gecko Browsers */
+  background: none; 
+}
+::-webkit-selection {
+  background: none; 
+}
+::-o-selection {
+  background: none; 
 }

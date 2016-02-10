@@ -12,6 +12,14 @@ if (Meteor.isClient) {
               'Esta es una decision dificil para mi, pero siento que es mi camino. ',
               'Me llevo un monton de gente. ',
               'Siento que logre muchos objetivos y los que no logre, me dejaron cosas de las que aprendi. ',
+              'En este día cargado de emociones y recuerdos, quisiera agradecerles de haberme acompañado durante mi estadía con ustedes. ',
+              'Termino oficialmente mi relación de empleo hoy. ',
+              'Tuve el gran honor y el privilegio de haberme beneficiado de la sabiduría y del profesionalismo de personas extraordinarias y apasionadas, durante mi estadía. ',
+              'Puedo decir, ahora, que veo las tareas cotidianas desde una nueva perspectiva.  ',
+              'A todos gracias por su colaboración, paciencia y por su amistad sincera. ',
+              'No crean que por mis nuevos retos vaya a desaparecer.  ',
+              'Por el contrario, los tendré siempre presente y aquellos que quieran contactarme, lo pueden hacer a mi email.  ',
+              'Siempre los recordaré y sobre todo la amistad de algunos de ustedes. ',
         ];
         frasesLoaded.sort(function() { return  Math.random() });
         var frasesAMostrar = [];

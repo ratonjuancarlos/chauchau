@@ -1,0 +1,20 @@
+{
+  "name": "chauchau",
+  "version": "1.0.0",
+  "description": "Precario generador de textos para mails de despedidas de empresas.",
+  "main": "chauchau.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratonjuancarlos/chauchau.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratonjuancarlos/chauchau/issues"
+  },
+  "homepage": "https://github.com/ratonjuancarlos/chauchau#readme"
+}

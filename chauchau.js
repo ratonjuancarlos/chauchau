@@ -60,8 +60,28 @@ var getFrases = function(){
 
 var clipboard = new Clipboard('#btnCopy');
 
+
+function fadeOutEffect() {
+    var fadeTarget = document.getElementById("alertMessage");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 500);
+}
+
+// document.getElementById("target").addEventListener('click', fadeOutEffect);
+
+
 clipboard.on('success', function(e) {
     e.clearSelection();
+    document.getElementById("alertMessage").style.display = 'block';
+    fadeOutEffect()
 });
 
 

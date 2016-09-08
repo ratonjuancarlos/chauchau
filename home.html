@@ -26,9 +26,12 @@
 	            </p>
 	            <p>Gracias a todos.</p>
 	        </div>
+	        <div id="alertMessage" class="alert alert-dismissible alert-warning" style="display:none">
+	            <p>Se copio el texto al portapapeles.</p> 
+	          </div>
 	    </div>
-	    <script type="text/javascript" src="chauchau.js"></script>
 	    <style type="text/css">
+
 	    	.generarBtn button,
 			.copiarBtn button {
 				margin-bottom: 10px;
@@ -36,19 +39,22 @@
 
 			@media (max-width: 768px) {
 			  .generarBtn button,
-			  .copiarBtn button {
+			  .copiarBtn button,
+			  #alertMessage p {
 			    font-size: 1em;
 			  }
 			}
 
 			@media (min-width: 769px) and (max-width: 992px) {
 			  .generarBtn button,
-			  .copiarBtn button {
+			  .copiarBtn button,
+			  #alertMessage p {
 			    font-size: 3em;
 			  }
 			}
 
 	    </style>
+	    <script type="text/javascript" src="chauchau.js"></script>
 	</body>
 
 </html>

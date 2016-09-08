@@ -9,15 +9,17 @@
 
 	<body id="app">
 	<style type="text/css"></style>
-	    <div class="container">
+	    <div class="container-fluid">
 	        <div class="header clearfix">
 	            <h2>ChauChau for Business</h2>
 	            <h4>Mandalo en tu mail de despedida y listo!!!</h4>
 	        </div>
-	        <div role="separator" class="divider"></div>
-	        <button class="btn btn-success" v-on:click="generarChauchau">Generar ChauChau</button>
-            <button class="btn btn-primary " id="btnCopy" data-clipboard-action="copy" data-clipboard-target="#textoDespedida">Copiar al portapapeles</button>
-	        <div role="separator" class="divider"></div>
+	        <span class="col-lg-6 generarBtn">
+	        	<button class="col-xs-12 btn btn-success " v-on:click="generarChauchau">Generar ChauChau</button>
+	        </span>
+            <span class="col-lg-6 text-right copiarBtn">
+            	<button class="col-xs-12 btn btn-primary " id="btnCopy" data-clipboard-action="copy" data-clipboard-target="#textoDespedida">Copiar al portapapeles</button>
+            </span>
 	        <div class="jumbotron" id="textoDespedida">
 	            <p  v-for="frase in frases">
 	                {{ frase }} 
@@ -26,6 +28,28 @@
 	        </div>
 	    </div>
 	    <script type="text/javascript" src="chauchau.js"></script>
+	    <style type="text/css">
+	    	.generarBtn button,
+			.copiarBtn button {
+				margin-bottom: 10px;
+			}
+
+			@media (max-width: 768px) {
+			  .generarBtn button,
+			  .copiarBtn button {
+			    font-size: 1em;
+			  }
+			}
+
+			@media (min-width: 769px) and (max-width: 992px) {
+			  .generarBtn button,
+			  .copiarBtn button {
+			    font-size: 3em;
+			  }
+			}
+
+	    </style>
 	</body>
 
 </html>
+

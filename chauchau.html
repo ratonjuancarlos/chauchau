@@ -1,21 +1,30 @@
-<head>
-  <title>chauchau</title>
-  <script src="//cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<!-- 
-<a href="https://github.com/ratonjuancarlos/chauchau"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a> -->
+	<head>
+	    <title>Chaucha</title>
+	    <link rel="stylesheet" type="text/css" href="./chauchau.css">
+	    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+	</head>
 
-  <nav>
-	<div class="container">
-	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center page-title">ChauChau for Business</a>
+	<body id="app">
+	    <div class="container">
+	        <div class="header clearfix">
+	            <h2>ChauChau for Business</h2>
+	            <h4>Mandalo en tu mail de despedida y listo!!!</h4>
+	        </div>
+	        <div role="separator" class="divider"></div>
+	        <button class="btn btn-success" v-on:click="generarChauchau">Generar ChauChau</button>
+            <button class="btn btn-primary " id="btnCopy" data-clipboard-action="copy" data-clipboard-target="#textoDespedida">Copiar al portapapeles</button>
+	        <div role="separator" class="divider"></div>
+	        <div class="jumbotron" id="textoDespedida">
+	            <p  v-for="frase in frases">
+	                {{ frase }} 
+	            </p>
+	            <p>Gracias a todos.</p>
+	        </div>
 	    </div>
-	</div>
-  </nav>
+	    <script type="text/javascript" src="chauchau.js"></script>
+	</body>
 
-
-  {{> frases}}
-</body>
-
+</html>
